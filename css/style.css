@@ -34,11 +34,6 @@ div#video {
   bottom: 200px;
 }
 
-div#video iframe {
-  width: 255px;
-  height: 155px;
-}
-
 #people {
   position: absolute;
   bottom: 65px;
@@ -69,7 +64,7 @@ div#sea {
   left: 0px;
   bottom: 0px;
   top: 0px;
-  background-color: #d44;
+  background-color: gray;
   transition: background-color .5s ease;
 }
 
@@ -93,12 +88,12 @@ div#sea {
 }
 .giftbox:after {
   position: absolute;
-  color: #fff;
+  color: rgb(19, 1, 1);
   width: 100%;
   content: "Click Me!";
   left: 0;
   bottom: 0;
-  font-size: 24px;
+  font-size: 35px;
   text-align: center;
   transform: rotate(-20deg);
   transform-origin: 0 0;
@@ -445,6 +440,7 @@ div#sea {
   div#video {
     right: 290px;
     bottom: 235px;
+    /* height: 10%; */
   }
 
   div#video iframe {

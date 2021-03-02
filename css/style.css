@@ -34,6 +34,22 @@ div#video {
   bottom: 200px;
 }
 
+div#video iframe {
+  width: 255px;
+  height: 155px;
+}
+
+div#click_me_papan {
+  position: absolute;
+  right: 800px;
+  bottom: 50px;
+}
+
+div#click_me_papan iframe {
+  width: 343px;
+  height: 200px;
+}
+
 #people {
   position: absolute;
   bottom: 65px;

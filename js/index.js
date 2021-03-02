@@ -282,7 +282,6 @@ window.onload = function () {
 
 function reveal() {
   document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
-
   loop();
 
   var w, h;
@@ -294,10 +293,21 @@ function reveal() {
   }
 
   var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "foto_elsa.jpg");
+  ifrm.setAttribute("src", "foto_elsa.png");
   //ifrm.style.width = `${w}px`;
   //ifrm.style.height = `${h}px`;
   ifrm.style.border = 'none';
   document.querySelector('#video').appendChild(ifrm);
+
+  var step = 0;
+  var stepString = ['foto_elsa.png', 'foto_elsa_2.png', 'foto_elsa_3.png', 'foto_elsa_4.png'];
+  setInterval(function() {
+    
+    step++;
+    if (step > 3) step = 0;
+    ifrm.setAttribute("src", stepString[step]);
+    
+    console.log(step);
+  }, 3000)
 }
 
